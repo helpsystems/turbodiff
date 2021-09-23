@@ -1,4 +1,4 @@
-# turbodiff
+# Turbodiff
 
 Turbodiff is a binary diffing tool developed as an IDA plugin. It discovers and analyzes differences between the functions of two binaries.
 
@@ -9,16 +9,16 @@ Turbodiff works with IDA versions 4.9 and 5.x.
 For the binaries:
 Download the plugin and store it at the directory "..\IDA\plugins".
 
-If you want to compile it on your own: We have compiled it and tested it using Borland C. For the free version of IDA Pro (4.9) you'll need to first:
+*If you want to compile it on your own:* We have compiled it and tested it using Borland C. For the free version of IDA Pro (4.9) you'll need to first:
 1. Generate the ida_free.lib library. To do this execute:
 "implib -c ida_free.lib ida_free.def"
 2. Next, you must have the linker use this library.
 3. Compile.
 
 # Comparing two files:
-Open the first file to be compared with IDA and run /Option 1 (take info from this idb)/ from the plugin. Close.
-Open the second file to be compared with IDA and run /Option 1 (take info from this idb)/ from the plugin.
-Use /Option 2 (compare with...)/ from the plugin, and when prompted to select a file, select the first file. Chose if you want a log file to be genreated and run. Once finished a functions table will popup (watch Figure 1) describuing results. The results are then saved for later usage.
+1. Open the first file to be compared with IDA and run /Option 1 (take info from this idb)/ from the plugin. Close.
+2. Open the second file to be compared with IDA and run /Option 1 (take info from this idb)/ from the plugin.
+3. Use /Option 2 (compare with...)/ from the plugin, and when prompted to select a file, select the first file. Chose if you want a log file to be genreated and run. Once finished a functions table will popup (watch Figure 1) describuing results. The results are then saved for later usage.
 # Accessing a comparison generated earlier:
 Open one of the files with IDA. Select /Option 3 ("Compare functions with...")/ from the plugin options and choose the other file to be compared. The table will popup without executing any new tasks.
 # Comparing any two functions:
