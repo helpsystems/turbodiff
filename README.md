@@ -29,22 +29,22 @@ Each row represents two funct5ions that are being compared, and with 5 columns, 
 The categories can be:
 
 * identical:
- * Same function graph;
- * Same checksum in each basic block;
- * Same amount of instructions in each basic block;
+  * Same function graph;
+  * Same checksum in each basic block;
+  * Same amount of instructions in each basic block;
 * suspicious+:
- * Same function graph;
- * /Different/ checksum in each basic block;
- * Same amount of instructions in each basic block;
+  * Same function graph;
+  * /Different/ checksum in each basic block;
+  * Same amount of instructions in each basic block;
 * suspicious++:
- * Same function graph;
- * /Different/ checksum in at least one basic block;
- * /Different/ amount of instructions in at least one basic block;
+  * Same function graph;
+  * /Different/ checksum in at least one basic block;
+  * /Different/ amount of instructions in at least one basic block;
 * changed:
- * None of the above;
- * Related by an heuristic, as described in the presentation;
+  * None of the above;
+  * Related by an heuristic, as described in the presentation;
 * unmatched:
- * None of the above;
+  * None of the above;
 # Colors for basic blocks when diffing functions
 * white: Same checksum and number of instructions
 * green: Same number of instructions
